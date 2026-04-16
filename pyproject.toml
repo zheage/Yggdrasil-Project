@@ -1,8 +1,8 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"] 
-build-backend = "setuptools.backends.legacy:build"
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
-[project] # Informações a respeito do pacote
+[project]
 name = "yggdrasil"
 version = "0.0.1"
 description = "Árvore de decisão interativa para Python"
@@ -10,7 +10,7 @@ readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.8"
 dependencies = [
-    "requests>=2.28.0",   # adicione suas dependências aqui
+    "requests>=2.28.0",
 ]
 
 [project.urls]
